@@ -13,6 +13,11 @@ protected:
 	CSprite theMarble, theCannon, theBarrel;
 	CSpriteRect thePowerSlider, thePowerMarker;
 	CSpriteList theBumper;
+	CSpriteList wood;
+	CSpriteList grass;
+
+	CSprite theGoal;		// goal
+
 
 	// Sprites collections. Splashes are displayed after the marble gets destroyed.
 	CSpriteList theWalls;
@@ -26,6 +31,7 @@ protected:
 
 	// aiming time
 	long m_bAimTime;
+	bool m_bInMotion;
 
 	// Levels
 	Sint16 m_nCurLevel;			// level currently being played
